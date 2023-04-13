@@ -1,14 +1,22 @@
 const { REST, Routes } = require("discord.js");
-const { token, client_id } = require("./token.json");
+const { token, client_id } = require("./env.json");
 
 const commands = [
   {
-    name: "test",
-    description: "test Bot",
+    name: "fetch",
+    description: "抓取梗圖資料",
+  },
+  {
+    name: "list",
+    description: "梗圖列表",
+  },
+  {
+    name: "memes",
+    description: "我要梗圖",
   },
   {
     name: "bot-info",
-    description: "Show Bot Information",
+    description: "顯示機器人資訊",
   }
 ];
 
